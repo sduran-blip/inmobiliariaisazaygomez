@@ -3,50 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Isaza & Gómez SAS</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Inmobiliaria Sofi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url("https://picsum.photos/1200/500?random=1") no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin: 0 0 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-
+  <!-- ENCABEZADO -->
   <header>
-    <div class="logo">
-      <img src="logotipo.png" alt="Isaza & Gómez SAS">
-      <h1>Isaza & Gómez SAS</h1>
-    </div>
+    <img src="logo.png" alt="Logo Inmobiliaria Sofi">
     <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#propiedades">Propiedades</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#">Inicio</a>
+      <a href="#">Propiedades</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Contacto</a>
     </nav>
   </header>
 
-  <main>
-    <section id="inicio">
-      <h2>Bienvenido a Isaza & Gómez SAS</h2>
-      <p>Tu inmobiliaria de confianza en Pereira y Risaralda.</p>
-    </section>
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Encuentra tu hogar ideal</h2>
+    <p>Casas, apartamentos y más con Inmobiliaria Sofi</p>
+  </section>
 
-    <section id="propiedades">
-      <h2>Propiedades destacadas</h2>
-      <p>Aquí podrás mostrar casas, apartamentos o lotes.</p>
-    </section>
+  <!-- SECCIÓN DE PROPIEDADES -->
+  <section class="section">
+    <h3>Propiedades destacadas</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://picsum.photos/400/250?random=2" alt="Casa 1">
+        <h4>Casa Familiar</h4>
+        <p>Ubicada en zona tranquila, perfecta para tu familia.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/400/250?random=3" alt="Apartamento 1">
+        <h4>Apartamento Moderno</h4>
+        <p>Diseño contemporáneo con excelente ubicación.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/400/250?random=4" alt="Casa 2">
+        <h4>Casa de Campo</h4>
+        <p>Rodeada de naturaleza, ideal para descansar.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="nosotros">
-      <h2>Sobre nosotros</h2>
-      <p>Isaza & Gómez SAS es una empresa comprometida con el servicio inmobiliario.</p>
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>Email: contacto@isazaygomez.com</p>
-      <p>Teléfono: +57 300 000 0000</p>
-    </section>
-  </main>
-
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Isaza & Gómez SAS - Todos los derechos reservados.</p>
+    <p>&copy; 2025 Inmobiliaria Sofi - Todos los derechos reservados</p>
   </footer>
-
 </body>
 </html>
