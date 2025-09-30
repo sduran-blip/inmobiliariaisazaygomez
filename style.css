@@ -1,109 +1,67 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
+/* Fuente y estilos generales */
 body {
+  margin: 0;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
 }
 
+/* Encabezado con logo */
 header {
-  background: #1e3c72;
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #c8102e;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header .logo {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-nav ul {
-  list-style: none;
   display: flex;
-  gap: 20px;
+  align-items: center;
 }
 
-nav a {
-  color: white;
+header .logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+header h1 {
+  font-size: 1.5em;
+  color: #c8102e;
+  margin: 0;
+}
+
+header nav a {
+  margin-left: 20px;
   text-decoration: none;
+  color: #333;
   font-weight: bold;
 }
 
-nav a:hover {
-  text-decoration: underline;
+header nav a:hover {
+  color: #c8102e;
 }
 
-.banner {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
+/* Secciones */
+main {
+  padding: 40px;
 }
 
-.banner h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+section {
+  margin-bottom: 50px;
 }
 
-.propiedades {
-  padding: 40px 20px;
-  text-align: center;
+section h2 {
+  color: #c8102e;
 }
 
-.propiedades h2 {
-  margin-bottom: 20px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: #f9f9f9;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card h3 {
-  margin: 15px;
-  font-size: 1.2rem;
-}
-
-.card p {
-  margin: 0 15px 15px;
-  color: #555;
-}
-
-.nosotros, .contacto {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.nosotros p {
-  max-width: 700px;
-  margin: auto;
-}
-
+/* Footer */
 footer {
-  background: #1e3c72;
-  color: white;
   text-align: center;
-  padding: 15px;
-  margin-top: 20px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
 }
