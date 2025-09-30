@@ -1,0 +1,109 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+header {
+  background: #1e3c72;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+header .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.banner {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.propiedades {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.propiedades h2 {
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0 15px 15px;
+  color: #555;
+}
+
+.nosotros, .contacto {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.nosotros p {
+  max-width: 700px;
+  margin: auto;
+}
+
+footer {
+  background: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
